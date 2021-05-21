@@ -3,7 +3,7 @@ const fetch = require("isomorphic-fetch");
   
 const app = express();
 
-app.use(express.static(__dirname));
+app.use(express.static("public"));
 
 app.use(express.urlencoded({ extended: false }));
 
@@ -29,7 +29,5 @@ app.post("/submit", (req, res) => {
     });
 });
   
-/*
 const PORT = 3000;
 app.listen(PORT, () => console.log(`Server is running on PORT ${PORT}`));
-*/
