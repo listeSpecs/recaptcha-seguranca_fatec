@@ -28,6 +28,5 @@ app.post("/submit", (req, res) => {
       return res.send('<p>Ocorreu um erro, agora nunca saberemos se você é um robô ou não...</p>');
     });
 });
-  
-const PORT = 3000;
-app.listen(PORT, () => console.log(`Server is running on PORT ${PORT}`));
+
+app.listen(process.env.PORT || 3000);
