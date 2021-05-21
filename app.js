@@ -3,7 +3,7 @@ const fetch = require("isomorphic-fetch");
   
 const app = express();
 
-app.use(express.static("public"));
+app.use(express.static("src"));
 
 app.use(express.urlencoded({ extended: false }));
 
